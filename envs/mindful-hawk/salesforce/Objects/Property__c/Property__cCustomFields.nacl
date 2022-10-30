@@ -1,0 +1,24 @@
+type salesforce.Property__c {
+  salesforce.Currency Price__c {
+    apiName = "Property__c.Price__c"
+    label = "Price"
+    _required = true
+    createable = true
+    updateable = true
+    scale = 0
+    precision = 18
+    queryable = true
+    description = "The listed sale price of the home."
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.TextArea Street_Address__c {
+    apiName = "Property__c.Street_Address__c"
+    label = "Street Address"
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackTrending = false
+  }
+}

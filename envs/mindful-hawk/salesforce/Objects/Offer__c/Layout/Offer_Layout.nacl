@@ -1,0 +1,79 @@
+salesforce.Layout Offer__c_Offer_Layout@uubs {
+  fullName = "Offer__c-Offer Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Offer__c.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Offer__c.field.Offer_Amount__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Offer__c.field.Target_Close_Date__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Offer__c.field.Property__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Offer__c.field.Contact__c
+            },
+          ]
+        },
+        {
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Offer__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Offer__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    salesforce.Offer__c,
+  ]
+}

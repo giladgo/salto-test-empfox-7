@@ -1,0 +1,9 @@
+salesforce.ValidationRule Account_Account_Number_8_Characters {
+  fullName = "Account.Account_Number_8_Characters"
+  active = true
+  errorConditionFormula = "LEN( AccountNumber) != 8"
+  errorMessage = "Account number must be 8 characters long."
+  _parent = [
+    salesforce.Account,
+  ]
+}

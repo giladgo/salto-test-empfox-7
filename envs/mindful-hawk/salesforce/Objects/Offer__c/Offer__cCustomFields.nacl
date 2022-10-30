@@ -1,0 +1,54 @@
+type salesforce.Offer__c {
+  salesforce.Currency Offer_Amount__c {
+    apiName = "Offer__c.Offer_Amount__c"
+    label = "Offer Amount 123"
+    createable = true
+    updateable = true
+    scale = 0
+    precision = 18
+    queryable = true
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Date Target_Close_Date__c {
+    apiName = "Offer__c.Target_Close_Date__c"
+    label = "Target Close Date 55555"
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.MasterDetail Property__c {
+    apiName = "Offer__c.Property__c"
+    label = "Property"
+    writeRequiresMasterRead = false
+    reparentableMasterDetail = false
+    referenceTo = [
+      salesforce.Property__c,
+    ]
+    createable = true
+    updateable = false
+    relationshipOrder = 0
+    relationshipName = "Offers"
+    queryable = true
+    externalId = false
+    relationshipLabel = "Offers"
+    trackTrending = false
+  }
+  salesforce.Lookup Contact__c {
+    apiName = "Offer__c.Contact__c"
+    label = "Contact"
+    referenceTo = [
+      salesforce.Contact,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "Offers"
+    queryable = true
+    deleteConstraint = "SetNull"
+    externalId = false
+    relationshipLabel = "Offers"
+    trackTrending = false
+  }
+}

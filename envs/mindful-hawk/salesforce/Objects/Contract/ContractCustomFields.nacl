@@ -1,0 +1,17 @@
+type salesforce.Contract {
+  salesforce.FormulaNumber Days_Remaining__c {
+    apiName = "Contract.Days_Remaining__c"
+    label = "Days Remaining"
+    precision = 18
+    scale = 0
+    formula = "EndDate - TODAY()"
+    createable = false
+    updateable = false
+    unique = false
+    queryable = true
+    externalId = false
+    formulaTreatBlanksAs = "BlankAsZero"
+    trackHistory = false
+    _hidden_value = true
+  }
+}

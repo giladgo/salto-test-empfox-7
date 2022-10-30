@@ -1,0 +1,14 @@
+salesforce.ValidationRule Contact_Contact_must_be_in_Account_ZIP_Code {
+  fullName = "Contact.Contact_must_be_in_Account_ZIP_Code"
+  active = true
+  errorConditionFormula = '''
+AND(
+  NOT(ISBLANK( AccountId )),
+   MailingPostalCode <>  Account.ShippingPostalCode 
+)
+'''
+  errorMessage = "NOPE"
+  _parent = [
+    salesforce.Contact,
+  ]
+}

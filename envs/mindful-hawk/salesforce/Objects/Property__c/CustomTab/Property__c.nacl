@@ -1,0 +1,8 @@
+salesforce.CustomTab Property__c {
+  fullName = "Property__c"
+  customObject = true
+  motif = "Custom24: Building"
+  _parent = [
+    salesforce.Property__c,
+  ]
+}

@@ -1,4 +1,10 @@
 envs {
   envs = [
+    {
+      name = "mindful-hawk"
+      accountToServiceName = {
+        salesforce = "salesforce"
+      }
+    },
   ]
 }
