@@ -132,4 +132,16 @@ type salesforce.Customer {
     queryable = true
     _hidden_value = true
   }
+  salesforce.Text My_Test_Field__c {
+    apiName = "Customer.My_Test_Field__c"
+    label = "My Test Field"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+    description = "Another description 3"
+    externalId = false
+  }
 }
