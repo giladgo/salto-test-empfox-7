@@ -1,7 +1,7 @@
 envs {
   envsCloud = [
     {
-      uuid = "036a4e8f-e36e-449e-b41d-6573dd873e11"
+      uuid = "545b6e35-bd87-4586-995b-2d353a9fefb1"
       folderName = "mindful-hawk"
     },
   ]
